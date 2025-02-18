@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and background */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url('mogadishu.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ensures top-right sections */
+  align-items: center; /* Centers the app content */
+  position: relative;
+}
+
+/* Container to hold sections and weather app */
+.container {
+  display: flex;
+  justify-content: center; /* Centers the weather app */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end; /* Position links at the top-right */
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 8px 15px;
+}
+
+nav ul li a:hover {
+  background-color: #66b3ff;
+  border-radius: 5px;
+}
+
+/* App Wrapper (Centered in the middle) */
+.app-wrap {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 80px; /* Prevents navbar overlap */
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header and search box */
+header {
+  margin-bottom: 20px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  text-align: center;
+}
+
+.search-box:focus {
+  outline: none;
+  border-color: #66b3ff;
+}
+
+/* Location (City and Date) */
+.location {
+  margin-bottom: 20px;
+}
+
+.city {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 18px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Current Weather Display */
+.current {
+  margin-top: 20px;
+}
+
+.temp {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.temp span {
+  font-size: 40px;
+}
+
+.weather {
+  font-size: 24px;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.hi-low {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+/* Additional Weather Info */
+.clouds, .wind, .humidity {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* About and Contact Sections */
+section {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-wrap {
+    padding: 20px;
+  }
+
+  .city {
+    font-size: 30px;
+  }
+
+  .temp {
+    font-size: 60px;
+  }
+
+  .weather {
+    font-size: 20px;
+  }
+
+  .hi-low, .clouds, .wind, .humidity {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
