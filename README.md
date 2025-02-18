@@ -24,7 +24,8 @@ API: OpenWeather API (or any other weather API of your choice)
 
 📷 Screenshots
 
-(Include a few screenshots of your app here)
+(![Screenshot (13)](https://github.com/user-attachments/assets/f2752949-86d2-4fd6-891f-4dc930b7e77d))
+
 
 🔧 Installation & Usage
 
